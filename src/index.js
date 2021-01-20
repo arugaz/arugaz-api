@@ -72,7 +72,7 @@ module.exports.tiktok = function tiktok(url) {
 	})
 }
 
-module.exports.youtube = function(url, options) {
+module.exports.youtube = function youtube(url, options) {
 	options = {
 		k: String
 	}
