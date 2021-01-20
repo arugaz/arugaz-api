@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/ArugaZ/arugaz-api#readme",
   "dependencies": {
+    "jsdom": "^16.4.0",
     "node-fetch": "^2.6.1"
   }
 }
