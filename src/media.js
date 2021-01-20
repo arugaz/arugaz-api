@@ -2,31 +2,6 @@ const fetch = require('node-fetch');
 const ytb = require('../lib/youtube')
 const baseURI = 'https://arugaz.my.id'
 
-module.exports.ytsearch = function ytsearch(query) {
-	return new Promise((resolve, reject) => {
-		fetch(baseURI+'/api/media/ytsearch?query=' + encodeURIComponent(query))
-		.then(res => res.json())
-		.then(resolve)
-		.catch(reject)
-	})
-}
-
-module.exports.ytaudio = function ytaudio(url) {
-	return new Promise((resolve, reject) => {
-		ytb.yta(url)
-		.then(resolve)
-		.catch(reject)
-	})
-}
-
-module.exports.ytvideo = function ytsearch(url) {
-	return new Promise((resolve, reject) => {
-		ytb.ytv(url)
-		.then(resolve)
-		.catch(reject)
-	})
-}
-
 module.exports.instagram = function instagram(url) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/ig?url=' + query)
@@ -76,6 +51,31 @@ module.exports.twtimg = function twtimg(url) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/twimg?url=' + url)
 		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.ytsearch = function ytsearch(query) {
+	return new Promise((resolve, reject) => {
+		fetch(baseURI+'/api/media/ytsearch?query=' + encodeURIComponent(query))
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.ytaudio = function ytaudio(url) {
+	return new Promise((resolve, reject) => {
+		ytb.yta(url)
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.ytvideo = function ytsearch(url) {
+	return new Promise((resolve, reject) => {
+		ytb.ytv(url)
 		.then(resolve)
 		.catch(reject)
 	})
