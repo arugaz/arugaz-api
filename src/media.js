@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 const ytb = require('../lib/youtube')
 const baseURI = 'https://arugaz.my.id'
 
-function ytsearch(query) {
+module.exports.ytsearch = function ytsearch(query) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/ytsearch?query=' + encodeURIComponent(query))
 		.then(res => res.json())
@@ -11,7 +11,7 @@ function ytsearch(query) {
 	})
 }
 
-function ytaudio(url) {
+module.exports.ytaudio = function ytaudio(url) {
 	return new Promise((resolve, reject) => {
 		ytb.yta(url)
 		.then(resolve)
@@ -19,7 +19,7 @@ function ytaudio(url) {
 	})
 }
 
-function ytsearch(url) {
+module.exports.ytvideo = function ytsearch(url) {
 	return new Promise((resolve, reject) => {
 		ytb.ytv(url)
 		.then(resolve)
@@ -27,7 +27,7 @@ function ytsearch(url) {
 	})
 }
 
-function instagram(url) {
+module.exports.instagram = function instagram(url) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/ig?url=' + query)
 		.then(res => res.json())
@@ -36,7 +36,7 @@ function instagram(url) {
 	})
 }
 
-function stalkig(query) {
+module.exports.stalkig = function stalkig(query) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/stalkig?user=' + encodeURIComponent(query))
 		.then(res => res.json())
@@ -45,7 +45,7 @@ function stalkig(query) {
 	})
 }
 
-function storyig(query) {
+module.exports.storyig = function storyig(query) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/storyig?user=' + encodeURIComponent(query))
 		.then(res => res.json())
@@ -54,7 +54,7 @@ function storyig(query) {
 	})
 }
 
-function highlightig(query) {
+module.exports.highlightig = function highlightig(query) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/highlightig?user=' + encodeURIComponent(query))
 		.then(res => res.json())
@@ -63,7 +63,7 @@ function highlightig(query) {
 	})
 }
 
-function tiktok(url) {
+module.exports.tiktok = function tiktok(url) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/tiktok?url=' + url)
 		.then(res => res.json())
@@ -72,7 +72,7 @@ function tiktok(url) {
 	})
 }
 
-function twtimg(url) {
+module.exports.twtimg = function twtimg(url) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/twimg?url=' + url)
 		.then(res => res.json())
@@ -81,7 +81,7 @@ function twtimg(url) {
 	})
 }
 
-function twtvid(url) {
+module.exports.twtvid = function twtvid(url) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/twvid?url=' + url)
 		.then(res => res.json())
@@ -90,7 +90,7 @@ function twtvid(url) {
 	})
 }
 
-function stalktwt(query) {
+module.exports.stalktwt = function stalktwt(query) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/stalktwitt?user=' + encodeURIComponent(query))
 		.then(res => res.json())
@@ -99,7 +99,7 @@ function stalktwt(query) {
 	})
 }
 
-function facebook(url) {
+module.exports.facebook = function facebook(url) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/facebook?url=' + url)
 		.then(res => res.json())
@@ -108,7 +108,7 @@ function facebook(url) {
 	})
 }
 
-function phubsearch(query) {
+module.exports.phubsearch = function phubsearch(query) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/pornhub/search?query=' + encodeURIComponent(query))
 		.then(res => res.json())
@@ -117,7 +117,7 @@ function phubsearch(query) {
 	})
 }
 
-function phubdetail(url) {
+module.exports.phubdetail = function phubdetail(url) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/pornhub/detail?url=' + url)
 		.then(res => res.json())
@@ -126,7 +126,7 @@ function phubdetail(url) {
 	})
 }
 
-function xvidsearch(query) {
+module.exports.xvidsearch = function xvidsearch(query) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/xvideo/search?query=' + encodeURIComponent(query))
 		.then(res => res.json())
@@ -135,7 +135,7 @@ function xvidsearch(query) {
 	})
 }
 
-function xviddetail(url) {
+module.exports.xviddetail = function xviddetail(url) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/xvideo/detail?url=' + url)
 		.then(res => res.json())
@@ -144,7 +144,7 @@ function xviddetail(url) {
 	})
 }
 
-function xnxxsearch(query) {
+module.exports.xnxxsearch = function xnxxsearch(query) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/xnxx/search?query=' + encodeURIComponent(query))
 		.then(res => res.json())
@@ -153,7 +153,7 @@ function xnxxsearch(query) {
 	})
 }
 
-function xnxxdetail(url) {
+module.exports.xnxxdetail = function xnxxdetail(url) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/xnxx/detail?url=' + url)
 		.then(res => res.json())
@@ -171,7 +171,7 @@ module.exports.filmsearch = function filmsearch(query) {
 	})
 }
 
-function filmdetail(url) {
+module.exports.filmdetail = function filmdetail(url) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/filmapik/detail?url=' + url)
 		.then(res => res.json())

@@ -1,6 +1,6 @@
 {
   "name": "@arugaz/arugaz-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Access ArugaZ Rest Api Programmatically",
   "main": "src/index.js",
   "scripts": {
