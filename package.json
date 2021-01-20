@@ -1,0 +1,25 @@
+{
+  "name": "arugaz-api",
+  "version": "1.0.0",
+  "description": "Access ArugaZ Rest Api Programmatically",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArugaZ/arugaz-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "rest",
+    "api",
+    "arugaz"
+  ],
+  "author": "ArugaZ // arugaastri@gmail.com",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ArugaZ/arugaz-api/issues"
+  },
+  "homepage": "https://github.com/ArugaZ/arugaz-api#readme"
+}
