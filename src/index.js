@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-const ytb = require('./lib/youtube')
+const ytb = require('../lib/youtube')
 const baseURI = 'https://arugaz.my.id'
 var ArugaZ = module.exports;
 
