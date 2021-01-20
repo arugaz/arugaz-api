@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 const ytb = require('../lib/youtube')
 const baseURI = 'https://arugaz.my.id'
 
-module.exports.ytsearch = function ytsearch(query) {
+module.exports.sosmed.ytsearch = function ytsearch(query) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/ytsearch?query=' + encodeURIComponent(query))
 		.then(res => res.json())
@@ -11,7 +11,7 @@ module.exports.ytsearch = function ytsearch(query) {
 	})
 }
 
-module.exports.ytaudio = function ytaudio(url) {
+module.exports.sosmed.ytaudio = function ytaudio(url) {
 	return new Promise((resolve, reject) => {
 		ytb.yta(url)
 		.then(resolve)
@@ -19,7 +19,7 @@ module.exports.ytaudio = function ytaudio(url) {
 	})
 }
 
-module.exports.ytvideo = function ytsearch(url) {
+module.exports.sosmed.ytvideo = function ytsearch(url) {
 	return new Promise((resolve, reject) => {
 		ytb.ytv(url)
 		.then(resolve)
@@ -27,7 +27,7 @@ module.exports.ytvideo = function ytsearch(url) {
 	})
 }
 
-module.exports.instagram = function instagram(url) {
+module.exports.sosmed.instagram = function instagram(url) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/ig?url=' + query)
 		.then(res => res.json())
@@ -36,7 +36,7 @@ module.exports.instagram = function instagram(url) {
 	})
 }
 
-module.exports.stalkig = function stalkig(query) {
+module.exports.sosmed.stalkig = function stalkig(query) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/stalkig?user=' + encodeURIComponent(query))
 		.then(res => res.json())
@@ -45,7 +45,7 @@ module.exports.stalkig = function stalkig(query) {
 	})
 }
 
-module.exports.storyig = function storyig(query) {
+module.exports.sosmed.storyig = function storyig(query) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/storyig?user=' + encodeURIComponent(query))
 		.then(res => res.json())
@@ -54,7 +54,7 @@ module.exports.storyig = function storyig(query) {
 	})
 }
 
-module.exports.highlightig = function highlightig(query) {
+module.exports.sosmed.highlightig = function highlightig(query) {
 	return new Promise((resolve, reject) => {
 		fetch(baseURI+'/api/media/highlightig?user=' + encodeURIComponent(query))
 		.then(res => res.json())
@@ -63,20 +63,119 @@ module.exports.highlightig = function highlightig(query) {
 	})
 }
 
-module.exports.tiktok = function tiktok(url) {
+module.exports.sosmed.tiktok = function tiktok(url) {
 	return new Promise((resolve, reject) => {
-		fetch(baseURI+'/api/media/tiktok?user=' + url)
+		fetch(baseURI+'/api/media/tiktok?url=' + url)
 		.then(res => res.json())
 		.then(resolve)
 		.catch(reject)
 	})
 }
 
-module.exports.youtube = function youtube(url, options) {
-	options = {
-		k: String
-	}
+module.exports.sosmed.twtimg = function twtimg(url) {
 	return new Promise((resolve, reject) => {
-		if (!options.k) return reject('PLEASE INPUT Option')
+		fetch(baseURI+'/api/media/twimg?url=' + url)
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.sosmed.twtvid = function twtvid(url) {
+	return new Promise((resolve, reject) => {
+		fetch(baseURI+'/api/media/twvid?url=' + url)
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.sosmed.stalktwt = function stalktwt(query) {
+	return new Promise((resolve, reject) => {
+		fetch(baseURI+'/api/media/stalktwitt?user=' + encodeURIComponent(query))
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.sosmed.facebook = function facebook(url) {
+	return new Promise((resolve, reject) => {
+		fetch(baseURI+'/api/media/facebook?url=' + url)
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.sosmed.phubsearch = function phubsearch(query) {
+	return new Promise((resolve, reject) => {
+		fetch(baseURI+'/api/media/pornhub/search?query=' + encodeURIComponent(query))
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.sosmed.phubdetail = function phubdetail(url) {
+	return new Promise((resolve, reject) => {
+		fetch(baseURI+'/api/media/pornhub/detail?url=' + url)
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.sosmed.xvidsearch = function xvidsearch(query) {
+	return new Promise((resolve, reject) => {
+		fetch(baseURI+'/api/media/xvideo/search?query=' + encodeURIComponent(query))
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.sosmed.xviddetail = function xviddetail(url) {
+	return new Promise((resolve, reject) => {
+		fetch(baseURI+'/api/media/xvideo/detail?url=' + url)
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.sosmed.xnxxsearch = function xnxxsearch(query) {
+	return new Promise((resolve, reject) => {
+		fetch(baseURI+'/api/media/xnxx/search?query=' + encodeURIComponent(query))
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.sosmed.xnxxdetail = function xnxxdetail(url) {
+	return new Promise((resolve, reject) => {
+		fetch(baseURI+'/api/media/xnxx/detail?url=' + url)
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.sosmed.filmsearch = function filmsearch(query) {
+	return new Promise((resolve, reject) => {
+		fetch(baseURI+'/api/media/filmapik/search?query=' + encodeURIComponent(query))
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.sosmed.filmdetail = function filmdetail(url) {
+	return new Promise((resolve, reject) => {
+		fetch(baseURI+'/api/media/filmapik/detail?url=' + url)
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
 	})
 }
