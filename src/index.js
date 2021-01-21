@@ -1,1 +1,2 @@
-exports.sosmed = require('./media')
+exports.sosmed = require('./media');
+exports.textpro = require('./textpro');

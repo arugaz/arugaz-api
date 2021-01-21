@@ -1,6 +1,6 @@
 {
   "name": "@arugaz/arugaz-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Access ArugaZ Rest Api Programmatically",
   "main": "src/index.js",
   "scripts": {
@@ -12,9 +12,10 @@
   },
   "keywords": [
     "nodejs",
-    "rest",
+    "rest api",
     "api",
-    "arugaz"
+    "arugaz",
+    "scraper"
   ],
   "author": "ArugaZ // arugaastri@gmail.com",
   "license": "GPL-3.0",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/ArugaZ/arugaz-api#readme",
   "dependencies": {
+    "bent": "^7.3.12",
     "jsdom": "^16.4.0",
     "node-fetch": "^2.6.1"
   }

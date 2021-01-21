@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+const fetch = require('node-fetch')
 const ytb = require('../lib/youtube')
 const baseURI = 'https://arugaz.my.id'
 

@@ -1,6 +1,8 @@
 # ArugaZ-Api
 Access ArugaZ Rest Api Programmatically
-[website](http://arugaz.my.id/)
+
+### Main website 
+[arugaz.my.id](http://arugaz.my.id)
 
 #### If you have any suggestions of a website, open an issue!
 
