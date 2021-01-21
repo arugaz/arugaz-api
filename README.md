@@ -2,7 +2,7 @@
 Access ArugaZ Rest Api Programmatically
 
 ### Main website 
-[arugaz.my.id](http://arugaz.my.id)
+[arugaz.my.id](https://arugaz.my.id)
 
 #### If you have any suggestions of a website, open an issue!
 
@@ -41,28 +41,28 @@ arugaz.sosmed.xnxxdetail('https://www.xnxx.com/video-hw4efca/japanese_mom_f._son
 <details>
   <summary><b>Lists of module name (type = sosmed)</b> (click to show)</summary>
 
-| module name | params | response | description |
-| :--- | :---------- | :--- | :--- |
-| ytsearch | query | json | Youtube Search |
-| ytaudio | url | json | Get Youtube Audio |
-| ytvideo | url | json | Youtube Video |
-| instagram | url | json | Instagram Post |
-| stalkig | query | json | Instagram Profile |
-| storyig | query | json | Instagram Story |
-| highlightig | query | json | Instagram Highlight |
-| tiktok | url | json | Tiktok Download No WM |
-| twtimg | url | json | Twitter Image |
-| twtvid | url | json | Twitter Video |
-| stalktwt | query | json | Twitter Profile |
-| facebook | url | json | Facebook Video |
-| phubsearch | query | json | Pornhub Search |
-| phubdetail | url | json | Pornhub Detail |
-| xvidsearch | query | json | XVideo Search |
-| xviddetail | url | json | XVideo Detail |
-| xnxxsearch | query | json | Xnxx Search |
-| xnxxdetail | url | json | Xnxx Detail |
-| filmsearch | query | json | Movie Search |
-| filmdetail | url | json | Movie Detail |
+| module name | params | thing | response | description |
+| :--- | :---------- | :--- | :--- | :--- |
+| ytsearch | query | youtube title | json | Youtube Search |
+| ytaudio | url | youtube url | json | Get Youtube Audio |
+| ytvideo | url | youtube url | json | Youtube Video |
+| instagram | url | instagram url | json | Instagram Post |
+| stalkig | query | instagram username | json | Instagram Profile |
+| storyig | query | instagram username | json | Instagram Story |
+| highlightig | query | instagram username | json | Instagram Highlight |
+| tiktok | url | tiktok url | json | Tiktok Download No WM |
+| twtimg | url | twitter url | json | Twitter Image |
+| twtvid | url | twitter url | json | Twitter Video |
+| stalktwt | query | twitter username | json | Twitter Profile |
+| facebook | url | facebook url | json | Facebook Video |
+| phubsearch | query | pornhub title | json | Pornhub Search |
+| phubdetail | url | pornhub url | json | Pornhub Detail |
+| xvidsearch | query | xvideo title | json | XVideo Search |
+| xviddetail | url | xvideo url | json | XVideo Detail |
+| xnxxsearch | query | xnxx title | json | Xnxx Search |
+| xnxxdetail | url | xnxx url | json | Xnxx Detail |
+| filmsearch | query | filmapik title | json | Movie Search |
+| filmdetail | url | filmapik url | json | Movie Detail |
 
 </details>
 
@@ -82,42 +82,68 @@ arugaz.textpro.space3d('hello', 'world')
 <details>
   <summary><b>Lists of module name (type = textpro)</b> (click to show)</summary>
 
-| module name | params | response | description |
-| :--- | :---------- | :--- | :--- |
-| luxury | query | buffer | 3D luxury gold text effect |
-| text3d | query | buffer | 3D gradient text effect |
-| blackpink | query | buffer | Blackpink logo style |
-| realvintage | query | buffer | realistic vintage style light bulb |
-| realcloud | query | buffer | realistic cloud text effect |
-| sandsummer| query | buffer | write in sand summer beach |
-| sandwrite | query | buffer | sand writing |
-| sandengraved | query | buffer | sand engraved 3d |
-| sandsummery | query | buffer | summery sand writing |
-| foilballoon | query | buffer | foil balloon text effect |
-| glue3d | query | buffer | 3D glue effect |
-| space3d | query, query | buffer | space 3D text effect |
-| metaldark | query | buffer | Metal dark gold effect |
-| glitchtext | query, query | buffer | Glitch text effect tiktok |
-| stonetext | query, query | buffer | Stone text effect |
-| neonlight | query | buffer | Neon light with galaxy |
-| old1917 | query | buffer | 1917 Old Text effect |
-| minion | query | buffer | Minion text effect |
-| pornhub | query, query | buffer | Pornhub style logo |
-| holograpich | query | buffer | Holograpich 3D effect |
-| avengers | query, query | buffer | 3D Avengers Logo |
-| marvel | query, query | buffer | Marvel studio logo |
-| firework | query | buffer | Firework sparkle effect |
-| lavatext | query | buffer | Lava text effect |
-| america | query | buffer | Captain America style |
-| equalizer | query | buffer | Rainbow equalizer effect |
-| toxic | query | buffer | Green Toxic Text |
-| matrix | query | buffer | Matrix Text Effect |
-| blood | query | buffer | Horror blood effect |
-| thunder | query | buffer | Thunder text effect |
-| neon | query | buffer | Neon text effect |
-| bokeh | query | buffer | Bokeh text effect |
-| green | query | buffer | Green neon style |
-| glow | query | buffer | Glowing text |
-| water | query | buffer | Dropwater text effect |
+| module name | params | thing | response | description |
+| :--- | :---------- | :--- | :--- | :--- |
+| luxury | query | any text | buffer | 3D luxury gold text effect |
+| text3d | query | any text | buffer | 3D gradient text effect |
+| blackpink | query | any text | buffer | Blackpink logo style |
+| realvintage | query | any text | buffer | realistic vintage style light bulb |
+| realcloud | query | any text | buffer | realistic cloud text effect |
+| sandsummer| query | any text | buffer | write in sand summer beach |
+| sandwrite | query | any text | buffer | sand writing |
+| sandengraved | query | any text | buffer | sand engraved 3d |
+| sandsummery | query | any text | buffer | summery sand writing |
+| foilballoon | query | any text | buffer | foil balloon text effect |
+| glue3d | query | buffer | any text | 3D glue effect |
+| space3d | query, query | any text, any text | buffer | space 3D text effect |
+| metaldark | query | buffer | any text | Metal dark gold effect |
+| glitchtext | query, query | any text, any text | buffer | Glitch text effect tiktok |
+| stonetext | query, query | any text, any text | buffer | Stone text effect |
+| neonlight | query | any text | buffer | Neon light with galaxy |
+| old1917 | query | any text | buffer | 1917 Old Text effect |
+| minion | query | any text | buffer | Minion text effect |
+| pornhub | query, query | any text, any text | buffer | Pornhub style logo |
+| holograpich | query | any text | buffer | Holograpich 3D effect |
+| avengers | query, query | any text, any text | buffer | 3D Avengers Logo |
+| marvel | query, query | any text, any text | buffer | Marvel studio logo |
+| firework | query | any text | buffer | Firework sparkle effect |
+| lavatext | query | any text | buffer | Lava text effect |
+| america | query | any text | buffer | Captain America style |
+| equalizer | query | any text | buffer | Rainbow equalizer effect |
+| toxic | query | any text | buffer | Green Toxic Text |
+| matrix | query | any text | buffer | Matrix Text Effect |
+| blood | query | any text | buffer | Horror blood effect |
+| thunder | query | any text | buffer | Thunder text effect |
+| neon | query | any text | buffer | Neon text effect |
+| bokeh | query | any text | buffer | Bokeh text effect |
+| green | query | any text | buffer | Green neon style |
+| glow | query | any text | buffer | Glowing text |
+| water | query | any text | buffer | Dropwater text effect |
+
+</details>
+
+### Education
+
+```js
+//Example!
+arugaz.edu.corona('Indonesia')
+.then(res => console.log(res))
+.catch(err => console.log(err))
+
+arugaz.edu.translate('ar', 'Halo nama saya aruga')
+.then(res => console.log(res))
+.catch(err => console.log(err))
+```
+
+<details>
+  <summary><b>Lists of module name (type = edu)</b> (click to show)</summary>
+
+| module name | params | thing | response | description |
+| :--- | :---------- | :--- | :--- | :--- |
+| idwiki | query | any text | json | Indonesia Wikipedia |
+| enwiki | query | any text | json | English Wikipedia |
+| corona | query | country | json | Corona details by country |
+| resep | query | food | json | Food recipes |
+| translate | query, query | country id, any text | json | Translate to country language |
 
 </details>
