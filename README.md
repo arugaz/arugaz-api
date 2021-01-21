@@ -94,9 +94,9 @@ arugaz.textpro.space3d('hello', 'world')
 | sandengraved | query | any text | buffer | sand engraved 3d |
 | sandsummery | query | any text | buffer | summery sand writing |
 | foilballoon | query | any text | buffer | foil balloon text effect |
-| glue3d | query | buffer | any text | 3D glue effect |
+| glue3d | query | any text | buffer | 3D glue effect |
 | space3d | query, query | any text, any text | buffer | space 3D text effect |
-| metaldark | query | buffer | any text | Metal dark gold effect |
+| metaldark | query | any text | buffer | Metal dark gold effect |
 | glitchtext | query, query | any text, any text | buffer | Glitch text effect tiktok |
 | stonetext | query, query | any text, any text | buffer | Stone text effect |
 | neonlight | query | any text | buffer | Neon light with galaxy |
