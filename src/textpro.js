@@ -137,6 +137,14 @@ module.exports.neonlight = function neonlight(query) {
 	})
 }
 
+module.exports.neonnew = function neonnew(query) {
+	return new Promise((resolve, reject) => {
+		bent('buffer')(baseURI+'/api/textpro/neonnew?text=' + encodeURIComponent(query))
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
 module.exports.old1917 = function old1917(query) {
 	return new Promise((resolve, reject) => {
 		bent('buffer')(baseURI+'/api/textpro/old1917?text=' + encodeURIComponent(query))

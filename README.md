@@ -100,6 +100,7 @@ arugaz.textpro.space3d('hello', 'world')
 | glitchtext | query, query | any text, any text | buffer | Glitch text effect tiktok |
 | stonetext | query, query | any text, any text | buffer | Stone text effect |
 | neonlight | query | any text | buffer | Neon light with galaxy |
+| neonnew | query | any text | buffer | Neon light Effect |
 | old1917 | query | any text | buffer | 1917 Old Text effect |
 | minion | query | any text | buffer | Minion text effect |
 | pornhub | query, query | any text, any text | buffer | Pornhub style logo |
@@ -145,5 +146,32 @@ arugaz.edu.translate('ar', 'Halo nama saya aruga')
 | corona | query | country | json | Corona details by country |
 | resep | query | food | json | Food recipes |
 | translate | query, query | country id, any text | json | Translate to country language |
+
+</details>
+
+### Flaming Text
+
+```js
+//Example!
+arugaz.textpro.glue3d('hello world')
+.then(res => console.log(res))
+.catch(err => console.log(err))
+
+arugaz.textpro.space3d('hello', 'world')
+.then(res => console.log(res))
+.catch(err => console.log(err))
+```
+
+<details>
+  <summary><b>Lists of module name (type = textpro)</b> (click to show)</summary>
+
+| module name | params | thing | response | description |
+| :--- | :---------- | :--- | :--- | :--- |
+| wroom | query | any text | buffer | Wroom effect |
+| text3d | query | any text | buffer | Gold text 3D Style |
+| black | query | any text | buffer | Blackbird effect |
+| water | query | any text | buffer | Text with water effect |
+| smurf | query | any text | buffer | Like a smurf |
+| memo | query | any text | buffer | Memories text gif |
 
 </details>
