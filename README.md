@@ -153,17 +153,17 @@ arugaz.edu.translate('ar', 'Halo nama saya aruga')
 
 ```js
 //Example!
-arugaz.textpro.glue3d('hello world')
+arugaz.flaming.wroom('hello world')
 .then(res => console.log(res))
 .catch(err => console.log(err))
 
-arugaz.textpro.space3d('hello', 'world')
+arugaz.flaming.memo('hello world')
 .then(res => console.log(res))
 .catch(err => console.log(err))
 ```
 
 <details>
-  <summary><b>Lists of module name (type = textpro)</b> (click to show)</summary>
+  <summary><b>Lists of module name (type = flaming)</b> (click to show)</summary>
 
 | module name | params | thing | response | description |
 | :--- | :---------- | :--- | :--- | :--- |
